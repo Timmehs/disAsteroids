@@ -24,7 +24,7 @@ html, body, canvas {
   <script>
     var canvas = document.getElementById("game-canvas");
     canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth;
+    canvas.width = window.innerWidth; 
     var ctx = canvas.getContext("2d");
     var g = new Asteroids.Game();
     var gView = new Asteroids.GameView(g, ctx);
