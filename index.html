@@ -20,7 +20,7 @@ html, body, canvas {
 </head>
   
 <body>
-  <canvas id="game-canvas"></canvas>
+  <canvas id="game-canvas" onwindowresize="this.height = window.innerHeight; this.width = window.innerWidth;"></canvas>
   
   <script>
     var canvas = document.getElementById("game-canvas");
