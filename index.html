@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html>
-<style>
-html, body, canvas {
-  padding: 0px;
-  margin: 0px;
-}
-
-</style>
+<link rel="stylesheet" href="css/style.css" type="text/css">
+<script src="lib/underscore.js"></script>
 <head>
   <title>Asteroidz</title>
   <script src="lib/movingObject.js">  </script>
   <script src="lib/util.js"></script>
-  <script src="lib/asteroid.js"></script>  
-  <script src="lib/game.js"></script>  
+  <script src="lib/asteroid.js"></script>
+  <script src="lib/game.js"></script>
   <script src="lib/gameView.js"></script>
   <script src="lib/ship.js"></script>
 	<script src="lib/bullet.js"></script>
   <script src="lib/keymaster.js"></script>
 </head>
-  
+
 <body>
-  <canvas id="game-canvas" onwindowresize="this.height = window.innerHeight; this.width = window.innerWidth;"></canvas>
-  
+  <canvas id="game-canvas"></canvas>
+
   <script>
     var canvas = document.getElementById("game-canvas");
-    canvas.height = window.innerHeight;
-    canvas.width = window.innerWidth; 
+    canvas.height = 500;
+    canvas.width = 700;
     var ctx = canvas.getContext("2d");
     var g = new Asteroids.Game();
     var gView = new Asteroids.GameView(g, ctx);
