@@ -3,7 +3,12 @@ html, body, canvas {
   margin: 0px;
 }
 
-canvas {
+#game-container {
+  margin-left: calc(50% - 350px);
+}
+
+#game-canvas {
+  margin: 0 auto;
   border: 2px solid gainsboro;
   border-radius: 25px;
   box-shadow: 10px 10px 10px rgba(0,0,0, 0.6);
