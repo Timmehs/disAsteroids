@@ -1,6 +1,6 @@
 disAsteroids
 =========
-###Do it [Live!](http://timmehs.github.io/Asteroids)
+###Do it [Live!](http://timmehs.github.io/disAsteroids)
 - Employs object-oriented patterns through javascript prototyping.
 - Abstract class ‘movingObject’ used as parent class of asteroids, ship, and bullets.
 - Wrote custom ‘inherits’ method which facilitates extending of classes.
