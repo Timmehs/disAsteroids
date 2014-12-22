@@ -1,10 +1,31 @@
 html, body, canvas {
   padding: 0px;
   margin: 0px;
+  font-family: Helvetica;
+  background-color: #242424;
+}
+
+h1 {
+  font-size: 85px;
+  margin: 10px;
+  color:white;
+}
+
+h1.gameover {
+  margin:10px;
+  display: none;
+  font-size: 100px;
+  color: red;
+}
+
+h3 {
+  margin:10px;
+  font-size: 45px;
+  color: #32CD32;
 }
 
 #game-container {
-  margin-left: calc(50% - 350px);
+
 }
 
 #game-canvas {
