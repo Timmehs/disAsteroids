@@ -26,7 +26,7 @@ ss<!DOCTYPE html>
   </div>
   <h3>Level: <span id="levelTag">1</span></h3>
   <h1 class="gameover">YOU SUCK</h1>
-  <script>
+  <script type="text/javascript">
     var canvas = document.getElementById("game-canvas");
     HEIGHT = canvas.height = 500;
     WIDTH = canvas.width = 900;
@@ -34,6 +34,17 @@ ss<!DOCTYPE html>
     CTX.translate( WIDTH / 2, HEIGHT / 2);
     var gView = new Asteroids.GameView();
     gView.start();
+
+    (function() {
+      window._pa = window._pa || {};
+      // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
+      // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
+      // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
+      var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+      pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/54a5d91cfa171870d400004f.js";
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+    })();
+
   </script>
 </body>
 
