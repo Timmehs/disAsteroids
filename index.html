@@ -4,18 +4,7 @@ ss<!DOCTYPE html>
 
 <head>
   <title>disAsteroids!</title>
-  <script src="https://code.jquery.com/jquery-2.1.3.min.js">  </script>
-  <script src="lib/util.js"></script>
-  <script src="lib/simple-mesh.js"></script>
-  <script src="lib/movingObject.js">  </script>
-  <script src="lib/underscore.js"></script>
-  <script src="lib/asteroid.js"></script>
-  <script src="lib/tetroid.js"></script>
-  <script src="lib/game.js"></script>
-  <script src="lib/gameView.js"></script>
-  <script src="lib/ship.js"></script>
-	<script src="lib/bullet.js"></script>
-  <script src="lib/keymaster.js"></script>
+
 </head>
 
 <body>
@@ -26,6 +15,21 @@ ss<!DOCTYPE html>
   </div>
   <h3>Level: <span id="levelTag">1</span></h3>
   <h1 class="gameover">YOU SUCK</h1>
+
+
+
+  <script src="https://code.jquery.com/jquery-2.1.3.min.js">  </script>
+  <script src="lib/util.js"></script>
+  <script src="lib/simple-mesh.js"></script>
+  <script src="lib/movingObject.js">  </script>
+  <script src="lib/underscore.js"></script>
+  <script src="lib/asteroid.js"></script>
+  <script src="lib/tetroid.js"></script>
+  <script src="lib/game.js"></script>
+  <script src="lib/gameView.js"></script>
+  <script src="lib/ship.js"></script>
+  <script src="lib/bullet.js"></script>
+  <script src="lib/keymaster.js"></script>
   <script>
     var canvas = document.getElementById("game-canvas");
     HEIGHT = canvas.height = 500;
@@ -34,17 +38,6 @@ ss<!DOCTYPE html>
     CTX.translate( WIDTH / 2, HEIGHT / 2);
     var gView = new Asteroids.GameView();
     gView.start();
-
-
-    (function() {
-      window._pa = window._pa || {};
-      // _pa.orderId = "myOrderId"; // OPTIONAL: attach unique conversion identifier to conversions
-      // _pa.revenue = "19.99"; // OPTIONAL: attach dynamic purchase values to conversions
-      // _pa.productId = "myProductId"; // OPTIONAL: Include product ID for use with dynamic ads
-      var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
-      pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/54a5d91cfa171870d400004f.js";
-      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
-    })();
 
   </script>
 </body>
