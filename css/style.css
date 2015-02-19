@@ -2,7 +2,7 @@ html, body, canvas {
   padding: 0px;
   margin: 0px;
   font-family: Helvetica;
-  background-color: #242424;
+  background-color: black;
 }
 
 h1 {
@@ -25,12 +25,5 @@ h3 {
 }
 
 #game-container {
-
-}
-
-#game-canvas {
-  margin: 0 auto;
-  border: 2px solid gainsboro;
-  border-radius: 25px;
-  box-shadow: 10px 10px 10px rgba(0,0,0, 0.6);
+  margin-top: 5px;
 }
