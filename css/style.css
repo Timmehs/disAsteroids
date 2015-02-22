@@ -5,6 +5,10 @@ html, body, canvas {
   background-color: black;
 }
 
+body {
+  position: relative;
+}
+
 h1 {
   font-size: 85px;
   margin: 10px;
