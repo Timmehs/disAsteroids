@@ -4,16 +4,25 @@
 
 <head>
   <title>disAsteroids!</title>
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/highscore.css" type="text/css">
-  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 </head>
 
 <body>
 
   <div id="highscore-cover">
     <div id="highscore-dialogue">
-      Sup u won lol
+      <header>You've made the highscore list!</header>
+      <form>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter name" id="playerName" name="player_name">
+        </div>
+
+        <button id="hs-cancel" class="btn btn-default btn-lg">No Thanks</button>
+        <button id="hs-submit" class="btn btn-primary btn-lg">LIVE FOREVER</button>
+      </form>
     </div>
   </div>
 
@@ -54,6 +63,7 @@
   <script src="lib/menu.js"></script>
   <script src="lib/tetroid.js"></script>
   <script src="lib/game.js"></script>
+  <script src="lib/highscore.js"></script>
   <script src="lib/gameView.js"></script>
   <script src="lib/ship.js"></script>
   <script src="lib/bullet.js"></script>

@@ -3,16 +3,41 @@
   height: 100%;
   position: absolute;
   background-color: rgba(0,0,0, 0.7);
+  display: none;
   z-index: 5000;
 }
 
 #highscore-dialogue {
-  width: 500px;
-  height: 400px;
   margin-left: calc(50% - 250px);
   margin-top: calc(50% - 200px);
   background-color: white;
   position: absolute;
-  padding: 20px;
+  padding: 0px 15px 50px 15px;
+  font-family: Courier;
   border-radius: 4px;
+  font-weight: normal;
+}
+
+#highscore-dialogue header {
+  font-size: 26px;
+  text-align: center;
+  width: 100%;
+  border-bottom: 1px solid gainsboro;
+  margin-bottom: 30px;
+  padding: 15px;
+}
+
+#highscore-dialogue form {
+  width: 75%;
+  margin: 0 auto;
+}
+
+#highscore-dialogue input#playerName {
+  height: 40px;
+  font-size: 25px;
+}
+
+#highscore-dialogue form button {
+  float: right;
+  margin-left: 4px;
 }
