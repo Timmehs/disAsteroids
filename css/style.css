@@ -32,31 +32,46 @@ h3 {
   margin-top: 5px;
 }
 
-footer {
+header.buttons {
   position: fixed;
   top: 10px;
   right: 20px;
   text-align: center;
-  opacity: 0.5;
   color: white;
   font-size: 40px;
+}
+
+header.buttons section {
+  opacity: 0.5;
+  float: right;
+  margin-left: 20px;
   transition: opacity 0.3s;
 }
 
-footer:hover {
+header.buttons section:hover {
   opacity: 1;
-  transition: opacity 0.3s;
 }
+
+section.sound {
+  margin-top: 4px;
+}
+
+/* ABOUT */
+
+.about:hover .info-box {
+  display: block;
+}
+
 
 .info-box {
-  font-size: 16px;
+  font-size: 12px;
   line-height: 1.2;
   font-family: Courier;
   text-align: left;
   background-color: white;
   color: black;
-  left: -163px;
-  top: 57px;
+  left: -84px;
+  top: 61px;
   padding: 12px;
   display: none;
   position: absolute;
@@ -78,8 +93,4 @@ footer:hover {
   transform: rotate(45deg);
   top: -8px;
   left: 170px;
-}
-
-footer:hover .info-box {
-  display: block;
 }

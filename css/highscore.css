@@ -7,7 +7,7 @@
   z-index: 5000;
 }
 
-#highscore-dialogue {
+dialogue {
   margin-left: calc(50% - 250px);
   margin-top: calc(50% - 443px);
   background-color: white;
@@ -18,7 +18,7 @@
   font-weight: normal;
 }
 
-#highscore-dialogue header {
+dialogue header {
   font-size: 26px;
   text-align: center;
   width: 100%;
@@ -27,17 +27,17 @@
   padding: 15px;
 }
 
-#highscore-dialogue form {
+dialogue form {
   width: 75%;
   margin: 0 auto;
 }
 
-#highscore-dialogue input#playerName {
+dialogue input#playerName {
   height: 40px;
   font-size: 25px;
 }
 
-#highscore-dialogue form button {
+dialogue form button {
   float: right;
   margin-left: 4px;
 }
